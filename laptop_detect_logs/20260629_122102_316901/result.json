@@ -1,0 +1,101 @@
+{
+  "timestamp": "20260629_122102_316901",
+  "model_path": "/home/ane/dl_server/models/best.pt",
+  "device": "cpu",
+  "request": {
+    "conf": 0.6,
+    "imgsz": 640,
+    "target_label": null
+  },
+  "image": {
+    "width": 640,
+    "height": 480,
+    "raw_image_path": "/home/ane/dl_server/laptop_detect_logs/20260629_122102_316901/raw.jpg",
+    "annotated_image_path": "/home/ane/dl_server/laptop_detect_logs/20260629_122102_316901/annotated.jpg"
+  },
+  "inference_ms": 494.18847400011146,
+  "detections": [
+    {
+      "label": "toothpaste",
+      "class_id": 81,
+      "confidence": 0.7522381544113159,
+      "bbox": [
+        362.7027893066406,
+        158.5919647216797,
+        460.9143981933594,
+        458.90887451171875
+      ],
+      "center": [
+        411.80859375,
+        308.7504196166992
+      ],
+      "width": 98.21160888671875,
+      "height": 300.31690979003906
+    }
+  ],
+  "grasp_plan_result": {
+    "request_id": "e1c881d3-abf1-4fc9-8d4a-79da699569a2",
+    "current_flange_coords": [
+      147.4,
+      52.4,
+      241.7,
+      -177.69,
+      5.27,
+      -94.28
+    ],
+    "status": "ok",
+    "detection": {
+      "label": "toothpaste",
+      "class_id": 81,
+      "confidence": 0.752238,
+      "bbox": [
+        362.703,
+        158.592,
+        460.914,
+        458.909
+      ],
+      "midpoint_uv": [
+        411.809,
+        308.75
+      ]
+    },
+    "plan": {
+      "tcp_target_base_mm": [
+        200.087,
+        92.787,
+        0.0
+      ],
+      "flange_target_base_mm": [
+        173.974,
+        65.642,
+        96.857
+      ],
+      "flange_command": [
+        173.97,
+        65.64,
+        96.86,
+        -177.69,
+        5.27,
+        -94.28
+      ]
+    },
+    "debug": {
+      "camera_origin_base_mm": [
+        195.612,
+        92.794,
+        219.569
+      ],
+      "ray_direction_base": [
+        0.0203758,
+        -3.09e-05,
+        -0.9997924
+      ],
+      "ray_scale_mm": 219.614,
+      "tcp_offset_in_base_mm": [
+        26.113,
+        27.146,
+        -96.857
+      ]
+    }
+  }
+}

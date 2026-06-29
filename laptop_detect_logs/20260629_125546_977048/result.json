@@ -1,0 +1,101 @@
+{
+  "timestamp": "20260629_125546_977048",
+  "model_path": "/home/ane/dl_server/models/best.pt",
+  "device": "cuda:0",
+  "request": {
+    "conf": 0.6,
+    "imgsz": 640,
+    "target_label": null
+  },
+  "image": {
+    "width": 640,
+    "height": 480,
+    "raw_image_path": "/home/ane/dl_server/laptop_detect_logs/20260629_125546_977048/raw.jpg",
+    "annotated_image_path": "/home/ane/dl_server/laptop_detect_logs/20260629_125546_977048/annotated.jpg"
+  },
+  "inference_ms": 75.5279730001348,
+  "detections": [
+    {
+      "label": "toothpaste",
+      "class_id": 81,
+      "confidence": 0.9124824404716492,
+      "bbox": [
+        229.36029052734375,
+        0.0,
+        403.10089111328125,
+        480.0
+      ],
+      "center": [
+        316.2305908203125,
+        240.0
+      ],
+      "width": 173.7406005859375,
+      "height": 480.0
+    }
+  ],
+  "grasp_plan_result": {
+    "request_id": "6400ac55-f67d-4a86-b9db-37c88e38ece2",
+    "current_flange_coords": [
+      147.8,
+      52.4,
+      241.4,
+      -177.4,
+      4.87,
+      -94.66
+    ],
+    "status": "ok",
+    "detection": {
+      "label": "toothpaste",
+      "class_id": 81,
+      "confidence": 0.912482,
+      "bbox": [
+        229.36,
+        0.0,
+        403.101,
+        480.0
+      ],
+      "midpoint_uv": [
+        316.231,
+        240.0
+      ]
+    },
+    "plan": {
+      "tcp_target_base_mm": [
+        199.66,
+        117.01,
+        0.0
+      ],
+      "flange_target_base_mm": [
+        172.923,
+        90.763,
+        96.935
+      ],
+      "flange_command": [
+        172.92,
+        90.76,
+        96.93,
+        -177.4,
+        4.87,
+        -94.66
+      ]
+    },
+    "debug": {
+      "camera_origin_base_mm": [
+        196.396,
+        92.288,
+        219.191
+      ],
+      "ray_direction_base": [
+        0.0147951,
+        0.1120617,
+        -0.9935911
+      ],
+      "ray_scale_mm": 220.604,
+      "tcp_offset_in_base_mm": [
+        26.736,
+        26.246,
+        -96.935
+      ]
+    }
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "timestamp": "20260629_121846_244038",
+  "model_path": "/home/ane/dl_server/models/best.pt",
+  "device": "cpu",
+  "request": {
+    "conf": 0.6,
+    "imgsz": 640,
+    "target_label": null
+  },
+  "image": {
+    "width": 640,
+    "height": 480,
+    "raw_image_path": "/home/ane/dl_server/laptop_detect_logs/20260629_121846_244038/raw.jpg",
+    "annotated_image_path": "/home/ane/dl_server/laptop_detect_logs/20260629_121846_244038/annotated.jpg"
+  },
+  "inference_ms": 488.25337500056776,
+  "detections": [
+    {
+      "label": "toothpaste",
+      "class_id": 81,
+      "confidence": 0.6406979560852051,
+      "bbox": [
+        206.82662963867188,
+        192.11988830566406,
+        319.7126770019531,
+        466.3106689453125
+      ],
+      "center": [
+        263.2696533203125,
+        329.2152786254883
+      ],
+      "width": 112.88604736328125,
+      "height": 274.19078063964844
+    }
+  ],
+  "grasp_plan_result": {
+    "request_id": "bba4abed-0de1-4c27-af12-485717ebe57c",
+    "current_flange_coords": [
+      144.0,
+      -61.5,
+      242.3,
+      -177.72,
+      5.89,
+      -137.13
+    ],
+    "status": "ok",
+    "detection": {
+      "label": "toothpaste",
+      "class_id": 81,
+      "confidence": 0.640698,
+      "bbox": [
+        206.827,
+        192.12,
+        319.713,
+        466.311
+      ],
+      "midpoint_uv": [
+        263.27,
+        329.215
+      ]
+    },
+    "plan": {
+      "tcp_target_base_mm": [
+        208.315,
+        -32.086,
+        0.0
+      ],
+      "flange_target_base_mm": [
+        169.977,
+        -34.98,
+        96.549
+      ],
+      "flange_command": [
+        169.98,
+        -34.98,
+        96.55,
+        -177.72,
+        5.89,
+        -137.13
+      ]
+    },
+    "debug": {
+      "camera_origin_base_mm": [
+        206.984,
+        -64.501,
+        220.621
+      ],
+      "ray_direction_base": [
+        0.0059726,
+        0.1453616,
+        -0.9893606
+      ],
+      "ray_scale_mm": 222.994,
+      "tcp_offset_in_base_mm": [
+        38.338,
+        2.893,
+        -96.549
+      ]
+    }
+  }
+}
