@@ -32,3 +32,7 @@ python3 run_server.py
 
 1. 8000번 포트를 이용하기 때문에 8000번 포트를 이용하는 프로세스는 종료해주세요
 2. `models/best.pt`가 있는지 확인해 주세요
+
+## 주요 수정 파일
+
+- `config/server_config.ini`: YOLO MODEL 및 주요 캘리브레이션 설정
