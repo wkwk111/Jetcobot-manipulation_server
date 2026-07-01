@@ -21,7 +21,7 @@ pip install -r requirements.txt
 
 `/dl_server/datasets/coco8`에
 
-/home/ane/dl_server/datasets/coco8
+```/home/ane/dl_server/datasets/coco8
 ├── images
 │   ├── train
 │   │   ├── 000000000009.jpg
@@ -48,6 +48,7 @@ pip install -r requirements.txt
 │   └── val.cache
 ├── LICENSE
 └── README.md
+```
 
 이 형식으로 넣어주세요
 
@@ -70,7 +71,6 @@ label은 아래와 같은 형식으로
 model = YOLO("yolo26x.pt")  # load a pretrained model (recommended for training)
 줄에서는 https://docs.ultralytics.com/tasks/detect#train 에 정의된 yolo26n.pt , yolo26s.pt, yolo26m.pt, yolo26l.pt, yolo26x.pt를 입력해주세요
 
-# Train the model
 results = model.train(data="/home/ane/dl_server/coco8.yaml", epochs=100, imgsz=640)
 줄에서는 사용하시는 노트북의 VRAM 사양에 맞게 imgsz = 480으로 낮추시거나 
 
@@ -79,10 +79,11 @@ results = model.train(data="/home/ane/dl_server/coco8.yaml", epochs=100, imgsz=6
 
 `/dl_server/yolo_train.py`를 통한 학습이 끝나시면 `/dl_server/runs`에 
 
-/home/ane/dl_server/runs
+```/home/ane/dl_server/runs
 └── detect
     └── train
         └── weights
+```
 
 위와 같은 weights 폴더에 학습된 yolo 모델 가중치가 저장됩니다.
 
