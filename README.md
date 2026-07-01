@@ -126,7 +126,7 @@ python3 run_server.py
   <img 
     src="./images/jetcobot_spec.png" 
     alt="Jetcobot Flange to TCP 길이"
-    height="400"
+    height="700"
     width="700"
   /><br>
   <em>Jetcobot Flange to TCP 길이</em>
